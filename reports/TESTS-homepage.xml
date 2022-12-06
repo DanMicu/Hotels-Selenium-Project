@@ -1,0 +1,61 @@
+<testsuite name="homepage.Homepage" tests="4" errors="0" failures="0" skipped="0" time="26.829885" timestamp="2022-12-06T23:20:44.939078" hostname="DESKTOP-TP8N17N"><testcase classname="homepage.Homepage" name="Clicking the hotels logo refreshes the page but doesnt change the url" status="passed" time="6.409692"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Clicking the hotels logo refreshes the page but doesnt change the url
+    Given We are on the homepage ... passed in 3.999s
+    When We click the logo in the top left corner ... passed in 2.407s
+    Then Page is refreshed and we remain on the homepage ... passed in 0.004s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="homepage.Homepage" name="Searching for a hotel room in Calgary Canada for a select number of nights" status="passed" time="8.466983"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Searching for a hotel room in Calgary Canada for a select number of nights
+    Given We are on the homepage ... passed in 2.142s
+    And We click the going to button ... passed in 0.059s
+    And We type in 'Calgary' ... passed in 0.199s
+    And We select the first option from the dropdown menu ... passed in 0.375s
+    And We select the date filter menu ... passed in 0.133s
+    And We select the starting date of 27 December ... passed in 0.604s
+    And We select the checkout date of 30 December ... passed in 0.054s
+    And We click the done button under the date filter ... passed in 0.054s
+    When We click the travellers filter ... passed in 0.049s
+    And We change the number of travellers to 1 ... passed in 0.596s
+    And We click the done button under the travellers filter ... passed in 0.051s
+    And We click the search button ... passed in 4.114s
+    Then We are redirected to a results page with the filters entered ... passed in 0.036s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="homepage.Homepage" name="Changing the region displayed on the website" status="passed" time="5.507819"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Changing the region displayed on the website
+    Given We are on the homepage ... passed in 2.284s
+    When We click the english button ... passed in 0.096s
+    And We click the region tab ... passed in 0.180s
+    And We select Australia as our region from the dropdown menu ... passed in 0.063s
+    And We click save ... passed in 2.875s
+    Then We are redirected to the Australian website ... passed in 0.010s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="homepage.Homepage" name="Changing the region back to Canada" status="passed" time="6.445391"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Changing the region back to Canada
+    Given We are on the Australian homepage ... passed in 3.197s
+    When We click the english button ... passed in 0.146s
+    And We click the region tab ... passed in 0.126s
+    And We select Canada as our region from the dropdown menu ... passed in 0.058s
+    And We click save ... passed in 2.915s
+    Then We are redirected back to the Canadian homepage ... passed in 0.003s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

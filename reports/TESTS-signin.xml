@@ -1,0 +1,74 @@
+<testsuite name="signin.Sign in Page" tests="5" errors="0" failures="0" skipped="0" time="21.369539" timestamp="2022-12-06T23:21:31.782240" hostname="DESKTOP-TP8N17N"><testcase classname="signin.Sign in Page" name="Sign in attempt with invalid email and password" status="passed" time="2.269883"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Sign in attempt with invalid email and password
+    Given We are on the Sign in page ... passed in 1.991s
+    When We input a incorrect email ... passed in 0.136s
+    And We input a password ... passed in 0.109s
+    Then The 'Enter a valid email' error is present ... passed in 0.020s
+    And The Sign in button is disabled ... passed in 0.014s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="signin.Sign in Page" name="Forgot Password" status="passed" time="7.163936"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Forgot Password
+    Given We are on the Sign in page ... passed in 2.171s
+    When We click the Forgot password link ... passed in 1.274s
+    And We input our accounts email address ... passed in 0.094s
+    And We click the Send request button ... passed in 0.227s
+    Then We get the confirmation that a password reset email was sent ... passed in 3.397s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="signin.Sign in Page" name="Verify that password we input is hidden" status="passed" time="2.734624"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Verify that password we input is hidden
+    Given We are on the Sign in page ... passed in 2.277s
+    When we input a correct email ... passed in 0.231s
+    When We input our password ... passed in 0.099s
+    When We click the display password button ... passed in 0.104s
+    Then Our password is now visible ... passed in 0.023s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Password is text
+
+]]>
+</system-out></testcase><testcase classname="signin.Sign in Page" name="Verify that the Keep me signed in box is selected" status="passed" time="2.067549"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Verify that the Keep me signed in box is selected
+    Given We are on the Sign in page ... passed in 1.653s
+    When we input a correct email ... passed in 0.212s
+    And We input our password ... passed in 0.080s
+    And We click the keep me signed in box ... passed in 0.108s
+    Then The keep me signed in box is selected ... passed in 0.014s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="signin.Sign in Page" name="Successful sign in" status="passed" time="7.133547"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Successful sign in
+    Given We are on the Sign in page ... passed in 1.591s
+    When we input a correct email ... passed in 0.243s
+    And We input a correct password ... passed in 0.090s
+    When We click the sign in button ... passed in 0.085s
+    Then We are successfully signed in and redirected back to the home page ... passed in 5.125s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+Dan
+
+]]>
+</system-out></testcase></testsuite>
