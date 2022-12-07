@@ -138,4 +138,5 @@ def step_impl(context):
 @then('We are redirected back to the Canadian homepage')
 def step_impl(context):
     expected_url = "https://ca.hotels.com/?currency=CAD&eapid=2&locale=en_CA&pos=HCOM_CA&siteid=300000002&tpid=3002"
+    time.sleep(1)
     assert context.browser.get_current_url() == expected_url
