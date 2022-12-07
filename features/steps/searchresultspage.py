@@ -16,7 +16,7 @@ def step_impl(context):
     context.search_results_page.sorting_by_price()
 
 
-@then('Our results will be filtered by price low to high')
+@then('Our results will be filtered by star rating')
 def step_impl(context):
     assert context.search_results_page.verify_sorting_filter().is_displayed()
 

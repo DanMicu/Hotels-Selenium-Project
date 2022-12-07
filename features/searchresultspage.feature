@@ -6,7 +6,7 @@ Feature: Search results page
   Scenario: Sorting our search results by star rating
     When We click the sort by button
     And We select the star rating filter
-    Then Our results will be filtered by price low to high
+    Then Our results will be filtered by star rating
 
   Scenario: Using the search by property name search filter
     When We click the search by property name search filter
