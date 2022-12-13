@@ -28,4 +28,4 @@ The main folder is the features folder which includes:
   ![HTMLREPORT](https://user-images.githubusercontent.com/108822285/207373141-fbc3938b-861f-4a24-81f6-edd35537ec69.png)
 
   # Recording of the tests being executed:
-    
+ [![Hotels-Selenium-Project](https://img.youtube.com/vi/N8R6cT0q5t4/0.jpg)](https://www.youtube.com/watch?v=N8R6cT0q5t4)
