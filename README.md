@@ -1,5 +1,5 @@
 # Hotels-Selenium-Project
-This is my final project for the IT Factory automation testing exam
+This is my final project for the ITFactory automation testing exam
 
 For this project I decided to test various functionality features on the ca.hotels.com website which include tests to the home page, the search results page and the sign in page
 
